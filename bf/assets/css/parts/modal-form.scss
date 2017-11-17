@@ -1,0 +1,145 @@
+.modal-form {
+  .modal-dialog {
+    width: 96%;
+    max-width: 430px;
+    margin: 50px auto;
+    border-radius: 0px;
+    .modal-content {
+      border: 1px solid #8a8a8d;
+      border-radius: 0;
+      @include boxshadow(-1px 1px 3px 0px rgba(255,255,255,0.7));
+      padding: 10px;
+      .modal-header {
+        text-align: center;
+        font: bold 25px/1 $font-bold;
+        color: $primary-color;
+        text-transform: uppercase;
+        border: none;
+        margin: 0 0 15px 0;
+        position: relative;
+        padding: 5px 10px 10px;
+        .name {
+          color: $text-color;
+          > span {
+            color: #b0140c;
+          }
+        }
+        .btn-close {
+          width: 22px;
+          height: 22px;
+          text-align: center;
+          opacity: 1;
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      .panel-info {
+        padding: 0 10px;
+        font-size: 14px;
+        color: $text-color;
+        text-align: center;
+      }
+      .form-horizontal {
+        font-size: 20px;
+        color: $text-color;
+        .form-control {
+          background: #fcfcfc;
+          border-radius: 2px;
+          border: 1px solid #cfcfcf;
+          &:focus {
+            border-color: $primary-color;
+          }
+        }
+        textarea {
+          height: 90px;
+        }
+        .form-group {
+          > p {
+            font-size: 20px;
+            margin: 0 0 5px 0;
+          }
+        }
+        &.form-review {
+          .col-sm-7 {
+            padding-left: 0;
+            padding-top: 7px;
+            color: #757579;
+            font-size: 14px;
+          }
+          .bot {
+            margin-bottom: 0;
+            .btn-add-review {
+              float: right;
+              background: #e9e9eb;
+              border: none;
+              color: #313131;
+              font: bold 30px/1 $font-bold;
+              padding: 6px 15px;
+              height: auto;
+              &:hover {
+                background: darken(#e9e9eb, 5%);
+              }
+            }
+          }
+        }
+      }
+      .form-oneclick {
+        width: 200px;
+        margin: 0 auto;
+        .form-control {
+          border: none;
+          background: none;
+          text-align: center;
+          font: bold 25px/1 $font-bold;
+          border-bottom: 2px solid #c6c6c9;
+          text-transform: uppercase;
+        }
+      }
+      .bot {
+        margin: 0 0 20px 0;
+        .btn {
+          font: bold 22px/1 $font-bold;
+          text-transform: uppercase;
+          padding: 2px 10px;
+          height: 30px;
+          border: none;
+          margin: 0 auto;
+          display: block;
+          color: #f2f2f4;
+          &-buy {
+            width: 100px;
+            background: $primary-color;
+            &:hover {
+              background: darken($primary-color, 5%);
+            }
+          }
+          &-continue {
+            background: #757579;
+            border: 1px solid #b9b9bb;
+            &:hover {
+              background: darken(#757579, 5%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &#modal_add_review {
+    .modal-dialog {
+      max-width: 660px;
+      .modal-content {
+        .modal-header {
+          font: bold 23px/ $font-bold;
+          color: $text-color;
+          text-align: left;
+          text-transform: none;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+#bottom {
+  background: #757579;
+  border-radius: 9px 9px 0 0;
+  padding: 10px 0px 20px 0;
+  color: #f2f2f4;
+  .col-sm-6 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    &:after {
+      content: "";
+      width: 1px;
+      height: 210px;
+      background: #f2f2f4;
+      position: absolute;
+      right: 0;
+      top: 15px;
+    }
+  }
+  .heading {
+    font: 25px $font-bold;
+    margin: 0 0 5px 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 0;
+    li {
+      margin: 0 0 3px 0;
+      a {
+        font-size: 20px;
+        line-height: 1.1;
+        color: #f2f2f4;
+        display: block;
+      }
+    }
+    &.list-payments {
+      padding: 10px 0 0 0;
+      li {
+        margin-bottom: 12px;
+        a {
+          > span {
+            float: left;
+            width: 30px;
+            height: 24px;
+            background: #f2f2f4;
+            border-radius: 4px;
+            text-align: center;
+            padding-top: 3px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    &.list-delivary {
+      padding: 10px 0 0 0;
+      li {
+        margin-bottom: 25px;
+        a {
+          font-size: 18px;
+          min-height: 60px;
+          > span {
+            float: left;
+            width: 96px;
+            height: 60px;
+            background: #f2f2f4;
+            border-radius: 4px;
+            text-align: center;
+            padding-top: 3px;
+            margin-right: 10px;
+            &.delivary-post {
+              padding-top: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tels {
+    margin-bottom: 15px;
+    b {
+      font: 25px $font-bold;
+      color: #000;
+    }
+    p {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
+
+#footer {
+  background: $primary-color;
+  border-radius: 9px 9px  0 0;
+  margin: -10px 0 40px 0;
+  padding: 10px 20px;
+  color: #fbfbfb;
+  p {
+    margin: 0;
+  }
+  .col-stats {
+    padding: 20px 5px 0 0;
+    text-align: right;
+  }
+  a {
+    color: #fbfbfb;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  #bottom {
+    .col-sm-6 {
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #bottom {
+    .col-sm-6 {
+      &:after {
+        display: none !important;
+      }
+    }
+    ul {
+      padding: 0;
+    }
+  }
+}

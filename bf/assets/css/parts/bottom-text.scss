@@ -1,0 +1,19 @@
+.bottom-text {
+  margin: 20px 0 40px 0;
+  .top {
+    font: bold 40px/1 $font-bold;
+    color: $primary-color;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .bottom-text {
+    .top {
+      font-size: 30px;
+      margin: 0 0 20px 0;
+    }
+  }
+}

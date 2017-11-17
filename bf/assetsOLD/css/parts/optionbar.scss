@@ -1,0 +1,233 @@
+body.modal-open {
+  #optionbar {
+    padding-right: 17px;
+  }
+}
+#optionbar {
+  background: url(../images/panel_bg.png) repeat 0 0;
+  height: 42px;
+  padding: 3px 0;
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  @include boxshadow(-3px 0px 7px 0px rgba(0, 0, 0, 0.35));
+
+  .container {
+    position: relative;
+  }
+
+  .col-cart {
+    background: url(../images/panel_border.png) repeat-y left 0;
+    padding-right: 0;
+    .cart-inner {
+      padding-right: 65px;
+      position: relative;
+      vertical-align: top;
+      padding-left: 5px;
+
+      #gotop {
+        display: block;
+        vertical-align: top;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 52px;
+        height: 36px;
+        padding: 8px 0 0 3px;
+        text-align: center;
+        background: url(../images/panel_border.png) repeat-y right 0, url(../images/panel_border.png) repeat-y left 0;
+        &:hover {
+          background-color: darken(#757579, 2%);
+        }
+      }
+      > .icon {
+        margin: 4px 15px 0 0;
+        float: left;
+      }
+      > .link-cart {
+        font: 16px/1 $font;
+        color: #313131;
+        text-decoration: none;
+        display: table-cell;
+        vertical-align: middle;
+        height: 36px;
+        margin: 3px 15px 0 0;
+        &:hover {
+          color: $primary-color;
+        }
+        strong {
+          color: #f2f2f4;
+          font-weight: normal;
+        }
+      }
+      .btn-checkout {
+        border: 1px solid #313131;
+        border-radius: 5px;
+        padding: 6px 5px;
+        color: #313131;
+        text-transform: uppercase;
+        font: bold 16px/1 $font-bold;
+        background: transparent;
+        margin: 4px 0 0 0;
+        vertical-align: top;
+        float: right;
+        width: 120px;
+
+        &:hover {
+          background-color: darken(#757579, 2%);
+        }
+      }
+
+    }
+  }
+  .col-akcia {
+    background: url(../images/panel_border.png) repeat-y left 0;
+    > .icon {
+      float: left;
+      margin: 6px 12px 0 0;
+    }
+    > a {
+      display: table-cell;
+      vertical-align: middle;
+      height: 36px;
+      font: 16px/1 $font;
+      color: #f2f2f4;
+      text-decoration: none;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  .col-viewed {
+    background: url(../images/panel_border.png) repeat-y left 0;
+    height: 36px;
+    position: static;
+    .link-viewed {
+      font: bold 16px/1 $font-bold;
+      display: inline-block;
+      white-space: nowrap;
+      border-bottom: 2px dotted #fff;
+      color: #fff;
+      margin: 8px 0 0 0px;
+      text-decoration: none;
+      &:hover {
+        border: none;
+      }
+    }
+  }
+  .viewed-list {
+    position: absolute;
+    left: 0px;
+    bottom: 100%;
+    border: 1px solid #969696;
+    border-radius: 8px;
+    max-width: 90%;
+    @include boxshadow(-3px 0px 7px 0px rgba(0, 0, 0, 0.35));
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease 0s;
+    z-index: 90;
+    background: #fff;
+    &.opened {
+      left: 15px;
+      opacity: 1;
+      visibility: visible;
+    }
+    .list {
+      @include flexbox();
+      .item {
+        float: left;
+        text-align: center;
+        position: relative;
+        border-right: 1px solid #f2f2f4;
+        &:last-child {
+          border-right: none;
+        }
+        a {
+          display: block;
+          background: #fff;
+          width: 130px;
+          height: 130px;
+          overflow: hidden;
+          padding-top: 35px;
+          &:hover {
+            .title {
+              text-decoration: underline;
+            }
+          }
+        }
+        .photo {
+          padding: 5px;
+          text-align: center;
+          height: 100px;
+          img {
+            height: 100%;
+            width: auto;
+            max-width: 200px;
+          }
+        }
+        .title {
+          position: absolute;
+          top: 0;
+          right: 0px;
+          left: 0px;
+          padding: 7px 5px 3px 5px;
+          text-align: center;
+          font: bold 15px/1 $font-bold;
+          text-transform: uppercase;
+          color: #010101;
+          background: #fff;
+        }
+        .price {
+          border: 1px solid #fff;
+          border-right: none;
+          background: rgba(255,255,255,0.79);
+          display: inline-block;
+          padding: 3px 5px;
+          border-radius: 5px 0 0 5px;
+          position: absolute;
+          right: 0;
+          bottom: 7px;
+          > span {
+            font: bold 18px/16px $font-bold;
+            color: #313131;
+            white-space: nowrap;
+            &.new {
+              color: #b0140c;
+            }
+            &.old {
+              text-decoration: line-through;
+              color: #757579;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #optionbar {
+    .col-viewed {
+      .link-viewed {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 4px 0 0 0px;
+        border: none;
+        font-size: 24px;
+      }
+    }
+    .viewed-list {
+      .list {
+        .item {
+          float: none;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

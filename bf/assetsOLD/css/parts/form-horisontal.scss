@@ -1,0 +1,95 @@
+.form-horisontal {
+  margin-bottom: 50px;
+  .control-label {
+    font: bold 24px/1 $font-bold;
+    color: #313131;
+    padding-top: 5px;
+    .required {
+      color: #b0140c;
+    }
+  }
+  .form-control {
+    background: #fcfcfc;
+    border: 1px solid #cfcfcf;
+    border-radius: 0px;
+    font-size: 20px;
+    &:focus {
+      border-color: #abc5e3;
+      background: #fff;
+    }
+  }
+  .help {
+    text-align: center;
+    color: #757579;
+    font-size: 16px;
+    line-height: 1;
+    padding: 5px 0;
+    p {
+      margin: 0;
+    }
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .checkbox {
+    margin: 0 0 5px 0;
+
+    label {
+      padding-left: 45px;
+      min-height: 35px;
+      font: bold 24px/1.3 $font-bold;
+      white-space: normal;
+      cursor: pointer;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .txt {
+      position: relative;
+      padding-top: 5px;
+      &:before {
+        content: "";
+        background: url(../images/sprite.png) no-repeat -187px 0;
+        width: 36px;
+        height: 35px;
+        position: absolute;
+        left: -45px;
+        top: 3px;
+      }
+    }
+    input[type=checkbox] {
+      display: none;
+      &:checked + .txt {
+        &:before {
+          background-position: -187px -36px;
+        }
+      }
+      &:disabled + .txt {
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-horisontal {
+    .control-label {
+      font-size: 18px;
+    }
+    .form-control {
+      font-size: 16px;
+    }
+    .help {
+      font-size: 14px;
+    }
+    .checkbox {
+      label {
+        font-size: 20px;
+      }
+    }
+  }
+}

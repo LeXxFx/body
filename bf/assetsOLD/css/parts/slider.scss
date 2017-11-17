@@ -1,0 +1,95 @@
+#sl {
+  background: url(../images/bot_shadow.png) repeat-x 0 bottom;
+  .slider-wrap {
+    margin-bottom: 15px;
+    border: 1px solid #676667;
+    -webkit-box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+  }
+  .slider {
+    .slick-arrow {
+      background: #757579;
+      border: none;
+      width: 44px;
+      height: 44px;
+      padding: 6px 0 0 0;
+      border-radius: 50%;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      margin-top: -22px;
+      &.slick-prev {
+        left: 5px;
+      }
+      &.slick-next {
+        right: 5px;
+      }
+      &:hover {
+        background: lighten(#757579, 10%);
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      z-index: 1;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin: 0 5px 0 0;
+        button {
+          background: #757579;
+          border: none;
+          border: 2px solid #f2f2f4;
+          border-radius: 50%;
+          padding: 0;
+          width: 17px;
+          height: 17px;
+          display: inline-block;
+          text-indent: -999em;
+          &:hover {
+            background: lighten(#757579, 15%);
+          }
+        }
+        &.slick-active {
+          button {
+            background: $primary-color !important;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+  .col-sl-info {
+    padding-left: 6px;
+    .item {
+      margin-bottom: 15px;
+      text-align: center;
+      img {
+        border: 1px solid #676667;
+        -webkit-box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  #sl {
+    .slider {
+      .slick-arrow {
+        display: none !important;
+      }
+      .slick-dots {
+        bottom: 5px;
+      }
+    }
+  }
+}

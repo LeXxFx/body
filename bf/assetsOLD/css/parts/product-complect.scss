@@ -1,0 +1,187 @@
+.product-complect {
+  margin: 0 0 20px 0;
+  .complect-list {
+    text-align: center;
+    .complect-item {
+      width: 220px;
+      display: inline-block;
+      margin: 0 10px 20px 10px;
+
+      .wrap {
+        width: 220px;
+        margin: 0 auto;
+        position: relative;
+        border: 3px solid #757579;
+        padding: 25px 10px 10px 10px;
+        @include transition(all 0.3s ease 0s);
+        &:hover {
+          .wrap {
+            -webkit-box-shadow: -2px 2px 6px 0px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: -2px 2px 6px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: -2px 2px 6px 0px rgba(0, 0, 0, 0.35);
+            z-index: 100;
+          }
+        }
+        .ribbon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 5;
+          font: bold/1 15px $font-bold;
+          color: #f2f2f4;
+          text-transform: uppercase;
+          margin: 0 0 3px 0;
+          display: inline-block;
+          padding: 3px 8px;
+          min-width: 90px;
+          background: #1b460c;
+        }
+        .item {
+          text-align: center;
+          position: relative;
+          a {
+            display: block;
+            background: #fff;
+            overflow: hidden;
+            padding-top: 35px;
+            &:hover {
+              .title {
+                text-decoration: underline;
+                color: $primary-color;
+              }
+            }
+          }
+          .photo {
+            padding: 5px;
+            text-align: center;
+            height: 100px;
+            img {
+              height: 100%;
+              width: auto;
+              max-width: 200px;
+            }
+          }
+          .title {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            left: 0px;
+            padding: 15px 5px 3px 5px;
+            text-align: center;
+            font: bold 15px/1 $font-bold;
+            text-transform: uppercase;
+            color: #010101;
+            background: #fff;
+          }
+          .price {
+            border: 1px solid #fff;
+            border-right: none;
+            background: rgba(255, 255, 255, 0.79);
+            display: inline-block;
+            padding: 6px 5px;
+            border-radius: 5px 0 0 5px;
+            position: absolute;
+            right: 0;
+            bottom: 7px;
+            > span {
+              font: bold 22px/16px $font-bold;
+              color: #313131;
+              white-space: nowrap;
+              &.new {
+                color: #b0140c;
+                font-size: 30px;
+              }
+              &.old {
+                text-decoration: line-through;
+                color: $text-color;
+              }
+            }
+          }
+        }
+        .plus {
+          color: #b0140c;
+          font: bold 30px/16px $font-bold;
+          text-align: center;
+          padding: 3px 0;
+        }
+        > .price {
+          color: #b0140c;
+          font: bold 30px/16px $font-bold;
+          text-align: center;
+          border-top: 1px solid #f2f2f4;
+          padding: 10px 0;
+          margin: 10px 0;
+          .old {
+            text-decoration: line-through;
+          }
+        }
+        .baton {
+          padding: 0 10px;
+          margin-bottom: 10px;
+          .btn {
+            display: block;
+            width: 100%;
+            height: 38px;
+            border-radius: 0;
+            text-align: center;
+            font: bold 30px/1 $font-bold;
+            color: #f2f2f4;
+            background: $primary-color;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            &:hover {
+              color: #ddd;
+            }
+          }
+        }
+      }
+    }
+
+    &.slick-slider {
+      padding: 0 140px;
+    }
+    > .slick-arrow {
+      background: #757579;
+      border: none;
+      width: 44px;
+      height: 44px;
+      padding: 6px 0 0 0;
+      border-radius: 50%;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      margin-top: -22px;
+      &.slick-prev {
+        left: 50px;
+      }
+      &.slick-next {
+        right: 50px;
+      }
+      &:hover {
+        background: lighten(#757579, 10%);
+      }
+    }
+    .slick-dots {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .product-complect {
+    margin: 0 0 20px 0;
+    .complect-list {
+      &.slick-slider {
+        padding: 0 50px;
+      }
+      > .slick-arrow {
+        &.slick-prev {
+          left: 5px;
+        }
+        &.slick-next {
+          right: 5px;
+        }
+      }
+    }
+  }
+}
