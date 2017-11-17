@@ -1,0 +1,660 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты | BF</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="assets/plugins/soon-countdown/css/soon.min.css"/>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+    <div id="top">
+        <header id="header">
+            <div class="top">
+                <div class="container">
+                    <div class="row-top">
+                        <div class="col-dostavka">
+                            Город:
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="routefrom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Москва</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="routefrom">
+                                    <a class="dropdown-item" href="#">Санкт-Петербург</a>
+                                    <a class="dropdown-item" href="#">Таганрог</a>
+                                    <a class="dropdown-item" href="#">Нижний Новгород</a>
+                                </div>
+                            </div>
+                            <span class="val">Доставим 26 июля</span>
+                        </div>
+                        <div class="col-advants">
+                            <div class="advants">
+                                <div class="list">
+                                    <article>
+                                        <div class="inn">
+                                            Бесплатная доставка и самовывоз в 150 городах России
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="inn">
+                                            2Бесплатная доставка и самовывоз в 150 городах России
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-cart">
+                            <div class="account">
+                                <i class="icon icon-user"></i>
+                                <div class="dropdown">
+                                    <a href="#">Личный кабинет</a>
+                                    <div class="dropdown-menu">
+                                        <form class="frm">
+                                            <div class="form-group row">
+                                                <label for="" class="control-label col-md-3">Логин:</label>
+                                                <div class="col-md-9"><input type="text" class="form-control"/></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="control-label col-md-3">Пароль:</label>
+                                                <div class="col-md-9"><input type="text" class="form-control"/></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <a href="#">Забыли свой пароль?</a>
+                                                    <a href="#">Зарегистрироваться?</a>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <button class="btn btn-default">Войти</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <i class="icon icon-cart"></i>
+                                <div class="dropdown">
+                                    <a href="#">
+                                        Корзина
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="minicart">
+                                            <div class="products-list">
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 img">
+                                                            <a href="product.html"><img src="demo/product_img1.png" alt=""/></a>
+                                                        </div>
+                                                        <div class="col-sm-6 name">
+                                                            <a href="product.html">Мяч прыгун с ручками, 65 см.</a>
+                                                            <div class="options">
+                                                                <p>Цвет: розовый</p>
+                                                                <p>Размер: 65 см.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-3 price">
+                                                            <span>457 р.</span>
+                                                            <div class="input-counter">
+                                                                <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[1]">
+                                                                    -
+                                                                </button>
+                                                                <div class="input-group-text">
+                                                                    <input type="text" name="quant[1]" class="form-control input-number input-area" value="1 шт." min="0" max="100000" data-step="1" data-unit="шт." disabled="true">
+                                                                </div>
+                                                                <button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="quant[1]">
+                                                                    +
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-remove" title="Удалить товар с корзины"><i class="icon icon-remove"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 img">
+                                                            <a href="product.html"><img src="demo/product_img2.png" alt=""/></a>
+                                                        </div>
+                                                        <div class="col-sm-6 name">
+                                                            <a href="product.html">Мяч прыгун с ручками, 65 см.</a>
+                                                            <div class="options">
+                                                                <p>Цвет: розовый</p>
+                                                                <p>Размер: 65 см.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-3 price">
+                                                            <span class="new">457 р.</span>
+                                                            <span class="old">510 р.</span>
+                                                            <div class="input-counter">
+                                                                <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[2]">
+                                                                    -
+                                                                </button>
+                                                                <div class="input-group-text">
+                                                                    <input type="text" name="quant[2]" class="form-control input-number input-area" value="1 шт." min="0" max="100000" data-step="1" data-unit="шт." disabled="true">
+                                                                </div>
+                                                                <button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="quant[2]">
+                                                                    +
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-remove" title="Удалить товар с корзины"><i class="icon icon-remove"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sum">
+                                                Итого: 1232 р. и подарок
+                                            </div>
+                                            <div class="row row-bot">
+                                                <div class="col-sm-6">
+                                                    <a href="#" class="btn btn-checkout">
+                                                        Оформить заказ
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <a href="cart.html" class="link-cart">Перейти в корзину</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="col-logo">
+                    <a href="" class="logo">
+                        <img src="assets/images/logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="col-wrap">
+                    <div class="top">
+                        <div class="inner">
+                            <div class="catalog">
+                                <a href="#" class="dropdown-catalog">
+                                    <i class="icon icon-catalog"></i>
+                                    <span>Каталог</span>
+                                </a>
+                            </div>
+                            <div class="search">
+                                <div class="search-input">
+                                    <i class="icon icon-eyes"></i>
+                                    <input type="text" placeholder="Поиск среди 3000 товаров" class="form-control"/>
+                                    <button class="btn">
+                                        <i class="icon icon-search"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="head">Найдено в разделах каталога:</div>
+                                        <ul>
+                                            <li><a href="#">Фитболы</a></li>
+                                            <li><a href="#">Мячи-прыгуны</a></li>
+                                            <li><a href="#">Мячи медицинские</a></li>
+                                            <li><a href="#">Массажеры</a></li>
+                                        </ul>
+                                        <div class="head">Найдены товары:</div>
+                                        <div class="products-list">
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-sm-2 img">
+                                                        <a href="product.html"><img src="demo/product_img1.png" alt=""/></a>
+                                                    </div>
+                                                    <div class="col-sm-7 name">
+                                                        <a href="product.html">Мяч прыгун с ручками, 65 см.</a>
+                                                    </div>
+                                                    <div class="col-sm-3 price">
+                                                        <span>457 р.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-sm-2 img">
+                                                        <a href="product.html"><img src="demo/product_img2.png" alt=""/></a>
+                                                    </div>
+                                                    <div class="col-sm-7 name">
+                                                        <a href="product.html">Мяч прыгун с ручками, 65 см.</a>
+                                                    </div>
+                                                    <div class="col-sm-3 price">
+                                                        <span class="new">457 р.</span>
+                                                        <span class="old">510 р.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn">Показать все результаты</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <p>Заказ по телефону:</p>
+                                <p>8 (495) 215-12-07</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <nav class="inner">
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <nav id="navi">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/1.svg" alt=""/>
+                            </div>
+                            <span>Коврики для йоги</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/2.svg" alt=""/>
+                            </div>
+                            <span>Скакалки</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/3.svg" alt=""/>
+                            </div>
+                            <span>Мячи фитболы</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="img">
+                                <img src="demo/product_img1.png" alt=""/>
+                            </div>
+                            <ul>
+                                <li><a href="#">Фитболы</a></li>
+                                <li><a href="#">Мячи-прыгуны</a></li>
+                                <li><a href="#">Мячи медицинские</a></li>
+                            </ul>
+                            <div class="bot">
+                                <a href="#" class="btn">Посмотреть все</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="lbl">- 15%</span>
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/4.svg" alt=""/>
+                            </div>
+                            <span>Гантели</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="img">
+                                <img src="demo/product_img1.png" alt=""/>
+                            </div>
+                            <ul>
+                                <li><a href="#">Фитболы</a></li>
+                                <li><a href="#">Мячи-прыгуны</a></li>
+                                <li><a href="#">Мячи медицинские</a></li>
+                            </ul>
+                            <div class="bot">
+                                <a href="#" class="btn">Посмотреть все</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/5.svg" alt=""/>
+                            </div>
+                            <span>Обручи</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/6.svg" alt=""/>
+                            </div>
+                            <span>Ролики</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/7.svg" alt=""/>
+                            </div>
+                            <span>Диск здоровье</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/8.svg" alt=""/>
+                            </div>
+                            <span>Эспандеры</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/9.svg" alt=""/>
+                            </div>
+                            <span>Бодибары</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/10.svg" alt=""/>
+                            </div>
+                            <span>Батуты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/11.svg" alt=""/>
+                            </div>
+                            <span>Массажеры</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/12.svg" alt=""/>
+                            </div>
+                            <span>Одежда</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/13.svg" alt=""/>
+                            </div>
+                            <span>Обувь</span>
+                        </a>
+                    </li>
+                    <li class="orange">
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/14.svg" alt=""/>
+                            </div>
+                            <span>Мы спорт</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="wrapper" class="has-sidebar" role="main">
+        <div class="inner">
+            <div id="content" role="main">
+                <div id="breadcumbs">
+                    <a href="#">Главная</a><span class="sep">/</span> <a href="#">О нас</a><span class="sep">/</span> <span class="current">Контакты</span>
+                </div>
+                <div class="page-content">
+                    <h1 class="h1">Контактная информация</h1>
+                    <div class="h2">Офлайн магазин и главный офис</div>
+                    <div class="post">
+                        <p>г. Москва, ул. Дубнинская, д. 10, корп. 1
+                        Время работы: Пн-Пт 9:00-18:0, Сб, Вс - выходной</p>
+                        <div class="map">
+                            <img src="demo/map.jpg" alt=""/>
+                        </div>
+                        <p>Телефоны: 8 (495) 215-12-07 (для абонентов из Москвы), 8 (800) 555-20-82 (для абонентов из регионов)</p>
+                        <div class="h2">
+                            Пункты выдачи товаров по РФ
+                        </div>
+                        <p>Введите в поиске ниже наименование ближайшего населенного пункта, чтобы узнать где вы сможете забрать ваш заказ</p>
+                        <div class="map">
+                            <img src="demo/map.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="h1">Наши реквизиты</div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="post">
+                                127590, Москва город, ул. Дубнинская, д. 10, корп. 1 <br/>
+                                ИНН 9715200734<br/>
+                                КПП 771501001<br/>
+                                ОГРН 1157746538234
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="post">
+                                Расчетный счет: 40702810602540000756<br/>
+                                Название Банка: АО "АЛЬФА-БАНК"<br/>
+                                Кор.счет: 30101810200000000593<br/>
+                                БИК банка: 044525593
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <aside>
+                    <div class="catalog-list">
+                        <div class="head">
+                            <span>
+                                О нас
+                                <i class="icon icon-arrow-down-aside"></i>
+                            </span>
+                        </div>
+                        <ul>
+                            <li><a href="#">О магазине</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Возврат и обмен</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                            <li><a href="#">Новости и акции</a></li>
+                            <li class="current"><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <div class="title">Мы в соцсетях</div>
+                        <div class="wrap">
+                            <img src="demo/vk.jpg" alt=""/>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <section class="bottom-text">
+        <div class="container">
+            <div class="top">Почему BodyForm.ru - лучший интернет магазин товаров для правильного фитнеса ?</div>
+            <div id="text" class="collapse clearfix">
+                <div class="post">
+                    <p>Некоторые представленные в каталоге интернет-магазина товары можно купить в Москве с различными держателями, в виде рожек или скоб. Эти недорогие по цене модели также подойдут для неопытных пользователей, детей и беременных женщин, чтобы добиться более уверенной фиксации на фитболе.</p>
+                </div>
+            </div>
+            <div class="show_more">
+                <button class="btn collapsed" data-toggle="collapse" data-target="#text" data-title-init="Узнать" data-title-collapsed="Свернуть"><span>Узнать</span> <i class="icon icon-arrow-down-min"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="bottom">
+            <div class="clearfix">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="heading">
+                                Магазин
+                            </div>
+                            <ul>
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Возврат и обмен</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Новости и акции</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="heading">
+                                Способы оплаты
+                            </div>
+                            <ul class="list-payments">
+                                <li><a href="#"><span><i class="icon icon-payment-nal"></i></span>
+                                    Наличные деньги</a></li>
+                                <li><a href="#"><span><i class="icon icon-payment-kiwi"></i></span>
+                                    Из кошелька Киви</a></li>
+                                <li><a href="#"><span><i class="icon icon-payment-sb"></i></span>
+                                    Сбербанк Онлайн</a></li>
+                                <li><a href="#"><span><i class="icon icon-payment-wm"></i></span>
+                                    Из кошелька Webmoney</a></li>
+                                <li><a href="#"><span><i class="icon icon-payment-card"></i></span>
+                                    Банковские карты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="heading">
+                                Доставка
+                            </div>
+                            <ul class="list-delivary">
+                                <li><a href="#"><span class="delivary-post"><i class="icon icon-delivary-post"></i></span>
+                                    Почта России и экспресс-доставка EMS</a></li>
+                                <li><a href="#"><span><i class="icon icon-delivary-logistic"></i></span>
+                                    Служба доставки "Shop-Logistics"</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="heading">
+                                Контакты
+                            </div>
+                            <div class="tels">
+                                <b>8 (495) 215-12-07</b>
+                                <p>для абонентов из Москвы</p>
+                                <b>8 (800) 555-20-82</b>
+                                <p>для абонентов из регионов</p>
+                            </div>
+                            <p>Офис и центральный пункт выдачи г. Москва, ул. Дубнинская, д. 10 корп.1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="row">
+                <div class="col-sm-9 col-md-11">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Body Form<sup>®</sup> - зарегистрированный товарный знак. Сведения о регистрации.</p>
+                            <p> BodyForm.ru © 2000-2016.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-1 col-stats">
+                    <img src="demo/stats.png" alt=""/>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="optionbar">
+        <div class="container">
+            <div class="clearfix">
+                <div class="col-xs-2 col-sm-4 col-lg-2 col-viewed">
+                    <a href="#" class="link-viewed"><i class="fa fa-eye hidden-lg hidden-sm hidden-sm" aria-hidden="true"></i>
+                        <span class="hidden-xs">Просмотренные товары</span></a>
+                    <div class="viewed-list">
+                        <div class="list clearfix">
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class="title">
+                                        Мяч прыгун с ручками, 65 см
+                                    </div>
+                                    <div class="photo">
+                                        <img src="demo/product_img3.png" alt=""/>
+                                    </div>
+                                    <div class="price">
+                                        <span>457 р.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class="title">
+                                        Мяч прыгун с ручками, 65 см
+                                    </div>
+                                    <div class="photo">
+                                        <img src="demo/product_img2.png" alt=""/>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new">457 р.</span>
+                                        <span class="old">510 р.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class="title">
+                                        Мяч прыгун с ручками, 65 см
+                                    </div>
+                                    <div class="photo">
+                                        <img src="demo/product_img1.png" alt=""/>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new">457 р.</span>
+                                        <span class="old">510 р.</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-4 col-akcia">
+                    <i class="icon icon-heart"></i>
+                    <a href="#">До 15 августа скидка 20% на эспандеры</a>
+                </div>
+                <div class="col-xs-10 col-sm-8 col-lg-6 col-cart">
+                    <div class="cart-inner">
+                        <i class="icon icon-cart-light"></i>
+                        <a href="checkout.html" class="btn btn-checkout hidden-xs hidden-sm">Оформить заказ</a>
+                        <a href="cart.html" class="link-cart">В корзине 2 товара на сумму 3025 р. <strong class="hidden-xs hidden-sm">и подарок</strong></a>
+                        <a href="#header" id="gotop"><i class="icon icon-gotop"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/slick/slick.js"></script>
+    <script src="assets/plugins/soon-countdown/js/soon.min.js"></script>
+    <script src="assets/js/jquery.sticky-kit.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/default.js"></script>
+    <script src="assets/js/shop.js"></script>
+
+    <script>
+       $(document).ready(function ($) {
+           Main.init();
+           Shop.init();
+       });
+   </script>
+
+</body>
+</html>

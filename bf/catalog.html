@@ -1,0 +1,1636 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог | BF</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="assets/plugins/soon-countdown/css/soon.min.css"/>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+    <div id="top">
+        <header id="header">
+            <div class="top">
+                <div class="container">
+                    <div class="row-top">
+                        <div class="col-dostavka">
+                            Город:
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="routefrom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Москва</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="routefrom">
+                                    <a class="dropdown-item" href="#">Санкт-Петербург</a>
+                                    <a class="dropdown-item" href="#">Таганрог</a>
+                                    <a class="dropdown-item" href="#">Нижний Новгород</a>
+                                </div>
+                            </div>
+                            <span class="val">Доставим 26 июля</span>
+                        </div>
+                        <div class="col-advants">
+                            <div class="advants">
+                                <div class="list">
+                                    <article>
+                                        <div class="inn">
+                                            Бесплатная доставка и самовывоз в 150 городах России
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="inn">
+                                            2Бесплатная доставка и самовывоз в 150 городах России
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-cart">
+                            <div class="account">
+                                <i class="icon icon-user"></i>
+                                <div class="dropdown">
+                                    <a href="#">Личный кабинет</a>
+                                    <div class="dropdown-menu">
+                                        <form class="frm">
+                                            <div class="form-group row">
+                                                <label for="" class="control-label col-md-3">Логин:</label>
+                                                <div class="col-md-9"><input type="text" class="form-control"/></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="control-label col-md-3">Пароль:</label>
+                                                <div class="col-md-9"><input type="text" class="form-control"/></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <a href="#">Забыли свой пароль?</a>
+                                                    <a href="#">Зарегистрироваться?</a>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <button class="btn btn-default">Войти</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <i class="icon icon-cart"></i>
+                                <div class="dropdown">
+                                    <a href="#">
+                                        Корзина
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="minicart">
+                                            <div class="products-list">
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-xs-3 img">
+                                                            <a href="product.html"><img src="demo/product_img1.png" alt=""/></a>
+                                                        </div>
+                                                        <div class="col-xs-6 name">
+                                                            <a href="product.html">Мяч прыгун с ручками, 65 см.</a>
+                                                            <div class="options">
+                                                                <p>Цвет: розовый</p>
+                                                                <p>Размер: 65 см.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-3 price">
+                                                            <span>457 р.</span>
+                                                            <div class="input-counter">
+                                                                <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[1]">
+                                                                    -
+                                                                </button>
+                                                                <div class="input-group-text">
+                                                                    <input type="text" name="quant[1]" class="form-control input-number input-area" value="1" min="0" max="100000" data-step="1">
+                                                                </div>
+                                                                <button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="quant[1]">
+                                                                    +
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-remove" title="Удалить товар с корзины"><i class="icon icon-remove"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-xs-3 img">
+                                                            <a href="product.html"><img src="demo/product_img2.png" alt=""/></a>
+                                                        </div>
+                                                        <div class="col-xs-6 name">
+                                                            <a href="product.html">Мяч прыгун с ручками, 65 см.</a>
+                                                            <div class="options">
+                                                                <p>Цвет: розовый</p>
+                                                                <p>Размер: 65 см.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-3 price">
+                                                            <span class="new">457 р.</span>
+                                                            <span class="old">510 р.</span>
+                                                            <div class="input-counter">
+                                                                <button type="button" class="btn btn-minus btn-number" data-type="minus" data-field="quant[2]">
+                                                                    -
+                                                                </button>
+                                                                <div class="input-group-text">
+                                                                    <input type="text" name="quant[2]" class="form-control input-number input-area" value="1" min="0" max="100000" data-step="1">
+                                                                </div>
+                                                                <button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="quant[2]">
+                                                                    +
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-remove" title="Удалить товар с корзины"><i class="icon icon-remove"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sum">
+                                                Итого: 1232 р. и подарок
+                                            </div>
+                                            <div class="row row-bot">
+                                                <div class="col-sm-6">
+                                                    <a href="#" class="btn btn-checkout">
+                                                        Оформить заказ
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <a href="cart.html" class="link-cart">Перейти в корзину</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="col-logo">
+                    <a href="" class="logo">
+                        <img src="assets/images/logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="col-wrap">
+                    <div class="top">
+                        <div class="inner">
+                            <div class="catalog">
+                                <a href="#" class="dropdown-catalog">
+                                    <i class="icon icon-catalog"></i>
+                                    <span>Каталог</span>
+                                </a>
+                            </div>
+                            <div class="search">
+                                <div class="search-input">
+                                    <i class="icon icon-eyes"></i>
+                                    <input type="text" placeholder="Поиск среди 3000 товаров" class="form-control"/>
+                                    <button class="btn">
+                                        <i class="icon icon-search"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="head">Найдено в разделах каталога:</div>
+                                        <ul>
+                                            <li><a href="#">Фитболы</a></li>
+                                            <li><a href="#">Мячи-прыгуны</a></li>
+                                            <li><a href="#">Мячи медицинские</a></li>
+                                            <li><a href="#">Массажеры</a></li>
+                                        </ul>
+                                        <div class="head">Найдены товары:</div>
+                                        <div class="products-list">
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-sm-2 img">
+                                                        <a href="product.html"><img src="demo/product_img1.png" alt=""/></a>
+                                                    </div>
+                                                    <div class="col-sm-7 name">
+                                                        <a href="product.html">Мяч прыгун с ручками, 65 см.</a>
+                                                    </div>
+                                                    <div class="col-sm-3 price">
+                                                        <span>457 р.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-sm-2 img">
+                                                        <a href="product.html"><img src="demo/product_img2.png" alt=""/></a>
+                                                    </div>
+                                                    <div class="col-sm-7 name">
+                                                        <a href="product.html">Мяч прыгун с ручками, 65 см.</a>
+                                                    </div>
+                                                    <div class="col-sm-3 price">
+                                                        <span class="new">457 р.</span>
+                                                        <span class="old">510 р.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn">Показать все результаты</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <p>Заказ по телефону:</p>
+                                <p>8 (495) 215-12-07</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <nav class="inner">
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <nav id="navi">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/1.svg" alt=""/>
+                            </div>
+                            <span>Коврики для йоги</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/2.svg" alt=""/>
+                            </div>
+                            <span>Скакалки</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/3.svg" alt=""/>
+                            </div>
+                            <span>Мячи фитболы</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="img">
+                                <img src="demo/product_img1.png" alt=""/>
+                            </div>
+                            <ul>
+                                <li><a href="#">Фитболы</a></li>
+                                <li><a href="#">Мячи-прыгуны</a></li>
+                                <li><a href="#">Мячи медицинские</a></li>
+                            </ul>
+                            <div class="bot">
+                                <a href="#" class="btn">Посмотреть все</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="lbl">- 15%</span>
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/4.svg" alt=""/>
+                            </div>
+                            <span>Гантели</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="img">
+                                <img src="demo/product_img1.png" alt=""/>
+                            </div>
+                            <ul>
+                                <li><a href="#">Фитболы</a></li>
+                                <li><a href="#">Мячи-прыгуны</a></li>
+                                <li><a href="#">Мячи медицинские</a></li>
+                            </ul>
+                            <div class="bot">
+                                <a href="#" class="btn">Посмотреть все</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/5.svg" alt=""/>
+                            </div>
+                            <span>Обручи</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/6.svg" alt=""/>
+                            </div>
+                            <span>Ролики</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/7.svg" alt=""/>
+                            </div>
+                            <span>Диск здоровье</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/8.svg" alt=""/>
+                            </div>
+                            <span>Эспандеры</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/9.svg" alt=""/>
+                            </div>
+                            <span>Бодибары</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/10.svg" alt=""/>
+                            </div>
+                            <span>Батуты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/11.svg" alt=""/>
+                            </div>
+                            <span>Массажеры</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/12.svg" alt=""/>
+                            </div>
+                            <span>Одежда</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/13.svg" alt=""/>
+                            </div>
+                            <span>Обувь</span>
+                        </a>
+                    </li>
+                    <li class="orange">
+                        <a href="#">
+                            <div class="navi-icon">
+                                <img class="svg" src="demo/icons/14.svg" alt=""/>
+                            </div>
+                            <span>Мы спорт</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="wrapper" class="has-sidebar" role="main">
+        <div class="inner">
+            <div id="content" role="main">
+                <div id="breadcumbs">
+                    <a href="#">Главная</a><span class="sep">/</span><span class="current">Мячи фитболы</span>
+                </div>
+                <section class="products">
+                    <header class="title">
+                        <div class="name">
+                            Мячи фитболы
+                            <span class="lbl">скидки до 70%</span>
+                        </div>
+                    </header>
+                    <div class="panel-pager clearfix">
+                        <div class="col-md-7 col-sorting">
+                            <div class="sorting">
+                                <span>Сортировать по:</span>
+                                <a href="#" class="active">цене</a> <span>|</span>
+                                <a href="#">популярности</a> <span>|</span>
+                                <a href="#">акциям</a> <span>|</span>
+                                <a href="#">новинкам</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-show-count">
+                            <div class="show-count">
+                                <span>Показывать по:</span>
+                                <a href="#" class="active">24</a> <span>|</span>
+                                <a href="#">48</a> <span>|</span>
+                                <a href="#">96</a> <span>|</span>
+                                <a href="#">Все</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list clearfix">
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-leader">Лидер продаж</span></p>
+                                    <span class="percent">-20%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img1.png" alt=""/>
+                                        </figure>
+                                        <figure class="img-item">
+                                            <img src="demo/product_img2.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Диск здоровья Joerex 4566</span>
+                                        <span class="short">
+                                            Формирует красивую походку и осанку
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new">690 р.</span>
+                                    <span class="old">1100 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-21T22:05"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-leader">Лидер продаж</span></p>
+                                    <span class="percent">-50%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img3.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Ролик гимнастический одинарный Joerex 7896</span>
+                                        <span class="short">
+                                            Для тренировки мышц живота, спины и рук
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>99999 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-19T22:05"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-present">С подарком!</span></p>
+                                    <span class="percent">-20%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img2.png" alt=""/>
+                                        </figure>
+                                        <figure class="img-item">
+                                            <img src="demo/product_img3.png" alt=""/>
+                                        </figure>
+                                        <figure class="img-item">
+                                            <img src="demo/product_img1.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Упоры для отжиманий XH-9155</span>
+                                        <span class="short">
+                                             Позволяют увеличить амплитуду упражнения
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new">690 р.</span>
+                                    <span class="old">1100 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-19T23:25"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="divider"></div>
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-leader">Лидер продаж</span></p>
+                                    <span class="percent">-20%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img1.png" alt=""/>
+                                        </figure>
+                                        <figure class="img-item">
+                                            <img src="demo/product_img2.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Диск здоровья Joerex 4566</span>
+                                        <span class="short">
+                                            Формирует красивую походку и осанку
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new">690 р.</span>
+                                    <span class="old">1100 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-21T22:05"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-leader">Лидер продаж</span></p>
+                                    <span class="percent">-50%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img3.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Ролик гимнастический одинарный Joerex 7896</span>
+                                        <span class="short">
+                                            Для тренировки мышц живота, спины и рук
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new">690 р.</span>
+                                    <span class="old">1100 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-17T22:05"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-present">С подарком!</span></p>
+                                    <span class="percent">-20%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img1.png" alt=""/>
+                                        </figure>
+                                        <figure class="img-item">
+                                            <img src="demo/product_img2.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Упоры для отжиманий XH-9155</span>
+                                        <span class="short">
+                                             Позволяют увеличить амплитуду упражнения
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new">690 р.</span>
+                                    <span class="old">1100 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-17T22:05"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="divider"></div>
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-leader">Лидер продаж</span></p>
+                                    <span class="percent">-20%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img1.png" alt=""/>
+                                        </figure>
+                                        <figure class="img-item">
+                                            <img src="demo/product_img2.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Диск здоровья Joerex 4566</span>
+                                        <span class="short">
+                                            Формирует красивую походку и осанку
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new">690 р.</span>
+                                    <span class="old">1100 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-21T22:05"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-leader">Лидер продаж</span></p>
+                                    <span class="percent">-50%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img3.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Ролик гимнастический одинарный Joerex 7896</span>
+                                        <span class="short">
+                                            Для тренировки мышц живота, спины и рук
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new">690 р.</span>
+                                    <span class="old">1100 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-17T22:05"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-item has-timer">
+                            <div class="wrap">
+                                <div class="tags">
+                                    <p class="ribbon"><span class="ribbon-present">С подарком!</span></p>
+                                    <span class="percent">-20%</span>
+                                </div>
+                                <div class="img">
+                                    <div class="preview-gallery">
+                                        <figure class="img-item">
+                                            <img src="demo/product_img1.png" alt=""/>
+                                        </figure>
+                                        <figure class="img-item">
+                                            <img src="demo/product_img2.png" alt=""/>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <a href="product.html">
+                                        <span class="name">Упоры для отжиманий XH-9155</span>
+                                        <span class="short">
+                                             Позволяют увеличить амплитуду упражнения
+                                        </span>
+                                    </a>
+                                    <div class="rate">
+                                        <span class="stars star-4"></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new">690 р.</span>
+                                    <span class="old">1100 р.</span>
+                                </div>
+                                <div class="baton">
+                                    <button class="btn btn-add-to-cart">Купить</button>
+                                </div>
+                                <div class="akcia">
+                                    <span>
+                                        <i class="icon icon-timer"></i>
+                                        до конца акции:</span>
+                                    <div class="timer">
+                                        <div class="soon"
+                                             data-due="2016-10-17T22:05"
+                                             data-layout="line"
+                                             data-format="d,h,m,s"
+                                             data-labels-days="день"
+                                             data-labels-hours=":"
+                                             data-labels-minutes=":"
+                                             data-labels-seconds=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options">
+                                    <div class="prop prop-size clearfix">
+                                        <div class="name">Размер: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <span>s 37</span>
+                                            </div>
+                                            <div class="value active">
+                                                <span>xl 40</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxl 45</span>
+                                            </div>
+                                            <div class="value">
+                                                <span>xxxl 47</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prop prop-color clearfix">
+                                        <div class="name">Цвет: </div>
+                                        <div class="values">
+                                            <div class="value">
+                                                <img src="assets/images/color_green.png" alt=""/>
+                                            </div>
+                                            <div class="value active">
+                                                <img src="assets/images/color_grey.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_blue.png" alt=""/>
+                                            </div>
+                                            <div class="value">
+                                                <img src="assets/images/color_yellow_brown.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="divider"></div>
+                    </div>
+                </section>
+                <div class="panel-pager clearfix">
+                    <div class="col-sm-3 col-pagination">
+                        <div class="pagination">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-load">
+                        <button class="btn btn-show-load">Показать еще</button>
+                    </div>
+                    <div class="col-md-5 col-show-count hidden-sm hidden-xs">
+                        <div class="show-count">
+                            <span>Показывать по:</span>
+                            <a href="#" class="active">24</a> <span>|</span>
+                            <a href="#">48</a> <span>|</span>
+                            <a href="#">96</a> <span>|</span>
+                            <a href="#">Все</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <aside>
+                    <div class="catalog-list">
+                        <div class="head">
+                            <span>
+                                Мячи фитболы
+                                <i class="icon icon-arrow-down-aside"></i>
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Фитболы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мячи-прыгуны
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мячи медицинские
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="filters">
+                        <div class="filter-item">
+                            <div class="head">
+                                <span>
+                                    Размер
+                                    <i class="icon icon-arrow-down-aside"></i>
+                                </span>
+                                <a href="#" class="filter-item-clear">сбросить фильтр</a>
+                            </div>
+                            <div class="options-list options-inline">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">18</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">25</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">45</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">55</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">65</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">75</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="head">
+                                <span>
+                                    Тип
+                                    <i class="icon icon-arrow-down-aside"></i>
+                                </span>
+                                <a href="#" class="filter-item-clear">сбросить фильтр</a>
+                            </div>
+                            <div class="options-list">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">Гимнастический</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">Массажный</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">С рожками</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        <span class="txt">Медбол</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-buttons">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-12 col-md-6">
+                                    <a href="#" class="btn btn-filter-show">Показать</a>
+                                </div>
+                                <div class="col-xs-6 col-sm-12 col-md-6">
+                                    <a href="#" class="btn btn-filter-cancel">Cбросить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section id="description">
+            <div class="post">
+                <h1>Подбираете фитбол и не знаете на чем остановиться? H1</h1>
+                <img src="demo/img1.jpg" alt="" style="float: left; margin: 0 10px 10px 0"/>
+                <h2>Основные типы фитболов H2</h2>
+                <ul>
+                    <li>обычный надувной, идеально подходит для щадящих детских домашних тренировок и начинающим;</li>
+                    <li>массажный <a href="#">мяч для фитнеса</a> с шипами – способствует улучшению кровообращения и снятию усталости;</li>
+                    <li>спортивный гимнастический мячик-попрыгун для спины и улучшения осанки.</li>
+                </ul>
+                <h3>Как купить H3</h3>
+                <p>Некоторые представленные в каталоге интернет-магазина товары можно купить в Москве с различными держателями, в виде рожек или скоб. Эти недорогие по цене модели также подойдут для неопытных пользователей, детей и беременных женщин, чтобы добиться более уверенной фиксации на фитболе.</p>
+                <div id="fullstory" class="collapse clearfix">
+                    <p>Некоторые представленные в каталоге интернет-магазина товары можно купить в Москве с различными держателями, в виде рожек или скоб. Эти недорогие по цене модели также подойдут для неопытных пользователей, детей и беременных женщин, чтобы добиться более уверенной фиксации на фитболе.</p>
+                </div>
+            </div>
+            <div class="show_more">
+                <button class="btn collapsed" data-toggle="collapse" data-target="#fullstory"><span>Подробнее</span> <i class="icon icon-arrow-down-min"></i></button>
+            </div>
+        </section>
+        <section id="hype">
+            <div class="top">BodyForm.ru - лучший интернет магазин <br/> товаров для правильного фитнеса</div>
+            <div class="h3">Цифры скажут всё сами.</div>
+            <div class="clearfix">
+                <div class="col-sm-8 hyp-list">
+                    <div class="row">
+                        <div class="col-sm-5 col-digit">
+                            <b>99%</b>
+                            покупателей нас <br/> рекомендуют
+                        </div>
+                        <div class="col-sm-7 col-info">
+                            Нас рекомендуют друзьям!  99% отзывов о нас на Яндекс.Маркете с оценкой 4 и 5.  Что нибудь еще можно написать.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-digit">
+                            <b>20</b>
+                            лет мы <br/> в спорте
+                        </div>
+                        <div class="col-sm-7 col-info">
+                            Более 20 лет мы прилагаем максимум усилий, чтобы достичь наивысшего уровня сервиса для наших покупателей и предложить самые лучшие и выгодные условия.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-digit">
+                            <b>30000</b>
+                            населенных <br/> пунктов
+                        </div>
+                        <div class="col-sm-7 col-info">
+                            Мы осуществляем быструю и недорогую доставку почти во все населенные пункты России. Имеются пункты самовывоза и бесплатная доставка при заказе от 5000 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 hyp-card">
+                    <img src="demo/card.png" alt=""/>
+                    <p>Как только вы начнете оформлять заказ в нашем магазине, вам станет доступна скидка 10% на всю сумму заказа. А карту для покупок в в оффлайн магазинах мы отправим вам с первым заказом.</p>
+                </div>
+            </div>
+        </section>
+        <section id="reviews">
+            <div class="top">
+                Нас рекомендуют друзьям!
+                <b>99% отзывов о нас на Яндекс.Маркете с оценкой 4 и 5.</b>
+            </div>
+            <div class="clearfix">
+                <div class="col-sm-3 col-ya">
+                    <a href="#"><img src="demo/yandex.png" alt=""/></a>
+                </div>
+                <div class="col-sm-9 col-review">
+                    <div class="item">
+                        <div class="meta">
+                            <div class="rating">
+                                <span class="stars star-5"></span>
+                                <span class="txt">отличный магазин</span>
+                            </div>
+                            <span class="date pull-right">21 июля, Москва</span>
+                        </div>
+                        <div class="name">Гуля Борисова</div>
+                        <div class="info">
+                            <p><b>Достоинства:</b> выбор, цены, быстрая доставка</p>
+                            <p><b>Недостатки:</b> не нашла</p>
+                            <p><b>Комментарий:</b></p>
+                            <p>Заказали самокаты для всей семьи. Цены приятно удивили, поэтому решили все перейти на этот транспорт. Доставили нашу радость очень быстро, помогли со сбором. Так что все довольны. Спасибо сотрудникам.</p>
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <a href="#" class="btn btn-show-comment">Показать другой</a>
+                        <a href="#" class="btn btn-add-comment">Оставить свой</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <div id="bottom">
+            <div class="clearfix">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="heading">
+                                Магазин
+                            </div>
+                            <ul>
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Возврат и обмен</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Новости и акции</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="heading">
+                                Способы оплаты
+                            </div>
+                            <ul class="list-payments">
+                                <li><a href="#"><span><i class="icon icon-payment-nal"></i></span>
+                                    Наличные деньги</a></li>
+                                <li><a href="#"><span><i class="icon icon-payment-kiwi"></i></span>
+                                    Из кошелька Киви</a></li>
+                                <li><a href="#"><span><i class="icon icon-payment-sb"></i></span>
+                                    Сбербанк Онлайн</a></li>
+                                <li><a href="#"><span><i class="icon icon-payment-wm"></i></span>
+                                    Из кошелька Webmoney</a></li>
+                                <li><a href="#"><span><i class="icon icon-payment-card"></i></span>
+                                    Банковские карты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="heading">
+                                Доставка
+                            </div>
+                            <ul class="list-delivary">
+                                <li><a href="#"><span class="delivary-post"><i class="icon icon-delivary-post"></i></span>
+                                    Почта России и экспресс-доставка EMS</a></li>
+                                <li><a href="#"><span><i class="icon icon-delivary-logistic"></i></span>
+                                    Служба доставки "Shop-Logistics"</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="heading">
+                                Контакты
+                            </div>
+                            <div class="tels">
+                                <b>8 (495) 215-12-07</b>
+                                <p>для абонентов из Москвы</p>
+                                <b>8 (800) 555-20-82</b>
+                                <p>для абонентов из регионов</p>
+                            </div>
+                            <p>Офис и центральный пункт выдачи г. Москва, ул. Дубнинская, д. 10 корп.1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="row">
+                <div class="col-sm-9 col-md-11">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Body Form<sup>®</sup> - зарегистрированный товарный знак. Сведения о регистрации.</p>
+                            <p> BodyForm.ru © 2000-2016.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-1 col-stats">
+                    <img src="demo/stats.png" alt=""/>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="optionbar">
+        <div class="container">
+            <div class="clearfix">
+                <div class="col-xs-2 col-sm-4 col-lg-2 col-viewed">
+                    <a href="#" class="link-viewed"><i class="fa fa-eye hidden-lg hidden-sm hidden-sm" aria-hidden="true"></i>
+                        <span class="hidden-xs">Просмотренные товары</span></a>
+                    <div class="viewed-list">
+                        <div class="list clearfix">
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class="title">
+                                        Мяч прыгун с ручками, 65 см
+                                    </div>
+                                    <div class="photo">
+                                        <img src="demo/product_img3.png" alt=""/>
+                                    </div>
+                                    <div class="price">
+                                        <span>457 р.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class="title">
+                                        Мяч прыгун с ручками, 65 см
+                                    </div>
+                                    <div class="photo">
+                                        <img src="demo/product_img2.png" alt=""/>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new">457 р.</span>
+                                        <span class="old">510 р.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="product.html">
+                                    <div class="title">
+                                        Мяч прыгун с ручками, 65 см
+                                    </div>
+                                    <div class="photo">
+                                        <img src="demo/product_img1.png" alt=""/>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new">457 р.</span>
+                                        <span class="old">510 р.</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-4 col-akcia">
+                    <i class="icon icon-heart"></i>
+                    <a href="#">До 15 августа скидка 20% на эспандеры</a>
+                </div>
+                <div class="col-xs-10 col-sm-8 col-lg-6 col-cart">
+                    <div class="cart-inner">
+                        <i class="icon icon-cart-light"></i>
+                        <a href="checkout.html" class="btn btn-checkout hidden-xs hidden-sm">Оформить заказ</a>
+                        <a href="cart.html" class="link-cart">В корзине 2 товара на сумму 3025 р. <strong class="hidden-xs hidden-sm">и подарок</strong></a>
+                        <a href="#header" id="gotop"><i class="icon icon-gotop"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/slick/slick.js"></script>
+    <script src="assets/plugins/soon-countdown/js/soon.min.js"></script>
+    <script src="assets/js/jquery.sticky-kit.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/default.js"></script>
+    <script src="assets/js/shop.js"></script>
+
+    <script>
+       $(document).ready(function ($) {
+           Main.init();
+           Shop.init();
+       });
+   </script>
+
+</body>
+</html>
